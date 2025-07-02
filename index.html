@@ -1,0 +1,66 @@
+<!-- Youtube Time Link Generator / 30.6.2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Time Link Generator</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#007BFF" />
+    <link rel="icon" href="icons/icon-192.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192.png">
+</head>
+<body>
+  <h1>YouTube Time Link Generator</h1>
+
+  <button id="toggleDarkMode">Dark Mode</button>
+
+  <form id="timeForm">
+    <div>
+      <label for="url">YouTube URL:</label>
+      <input type="url" id="url" placeholder="https://www.youtube.com/watch?v=..." required />
+    </div>
+
+    <div class="time-inputs">
+      <label>Time:</label>
+      <div class="time-fields">
+        <input type="number" id="hours" min="0" placeholder="Hours" />
+        <input type="number" id="minutes" min="0" max="59" placeholder="Minutes" />
+        <input type="number" id="seconds" min="0" max="59" placeholder="Seconds" />
+      </div>
+    </div>
+
+    <div>
+      <button type="button" id="generateButton">Generate Link</button>
+    </div>
+
+    <footer>
+      <p style="text-align:center; font-size: 14px; color: #777;">© 2024 Poco fermata</p>
+    </footer>
+  </form>
+
+  <div id="resultContainer">
+    <a id="generatedLink" target="_blank" style="display: none;">Open Generated Link</a>
+    <p id="displayLink" style="display: none;"></p>
+    <button id="copyButton" style="display: none;">Copy to Clipboard</button>
+    <p id="copyStatus"></p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          })
+          .catch(error => {
+            console.log('ServiceWorker registration failed: ', error);
+          });
+      });
+    }
+  </script>    
+</body>
+</html>
