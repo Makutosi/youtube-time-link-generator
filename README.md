@@ -11,7 +11,7 @@ Perfect for those moments when you want to jump directly to a longer classical m
   <img src="screenshot-3.png" alt="Dark Mode Enabled" width="250" title="Dark Mode Enabled"/>
 </p>
 
-➡️ [Live Demo](https://yourusername.github.io/youtube-time-link-generator/)  
+➡️ Try it here: [YouTube Time Link Generator](https://makutosi.github.io/youtube-time-link-generator/) 
 
 ## Features
 
