@@ -5,14 +5,11 @@ Perfect for those moments when you want to jump directly to a longer classical m
 
 ## Screenshots
 
-### 🎼 Main Screen
-![Main Screen](screenshot-1.png)
-
-### 🔗 After Link Generation
-![Generated Link](screenshot-2.png)
-
-### 🦉 Dark Mode Enabled
-![Dark Mode](screenshot-3.png)
+<p align="center">
+  <img src="screenshot-1.png" alt="Main Screen" width="250" title="Main Screen"/>
+  <img src="screenshot-2.png" alt="After Link Generation" width="250" title="After Link Generation"/>
+  <img src="screenshot-3.png" alt="Dark Mode Enabled" width="250" title="Dark Mode Enabled"/>
+</p>
 
 ➡️ [Live Demo](https://yourusername.github.io/youtube-time-link-generator/)  
 
